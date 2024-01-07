@@ -13,7 +13,10 @@ class _LoginUIState extends State<LoginUI> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding:  EdgeInsets.only(),
+          padding:  EdgeInsets.only(
+            left: MediaQuery.of(context).size.width * 0.065,
+            right: MediaQuery.of(context).size.width * 0.065,
+            ),
           child: Column(
             children: [
               IconButton(
@@ -26,7 +29,20 @@ class _LoginUIState extends State<LoginUI> {
                 'assets/images/logo.png',
                 height: MediaQuery.of(context).size.height * 0.2,
               ),
-            ],
+              Text(
+                  'Welcome Back,',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: MediaQuery.of(context).size.height * 0.03,
+                  ),
+                ),
+              Text(
+                  'make it work,make it right,make it fast',
+                ),
+                
+              
+              
+            ],//children
           ),
         ),
       ),

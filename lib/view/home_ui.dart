@@ -70,14 +70,18 @@ class _HomeUIState extends State<HomeUI> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.yellow,
                         fixedSize: Size(
-                          MediaQuery.of(context).size.width * 0.35,
-                          MediaQuery.of(context).size.height * 0.6,
+                          MediaQuery.of(context).size.width * 0.3,
+                          MediaQuery.of(context).size.height * 0.01,
                           ),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
                       ),
                     ),
+                    SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.05,
+
+                ),
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(context,
@@ -85,7 +89,7 @@ class _HomeUIState extends State<HomeUI> {
                           builder: (context) => SignupUI(), 
                         ),
                         );
-                      },
+                      },                   
                       child: Text(
                         'SIGNUP',
                         style: TextStyle(
@@ -96,8 +100,8 @@ class _HomeUIState extends State<HomeUI> {
                        style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.yellow,
                         fixedSize: Size(
-                          MediaQuery.of(context).size.width * 0.35,
-                          MediaQuery.of(context).size.height * 0.6,
+                          MediaQuery.of(context).size.width * 0.3,
+                          MediaQuery.of(context).size.height * 0.01,
                           ),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
@@ -107,7 +111,7 @@ class _HomeUIState extends State<HomeUI> {
                   ],
                 ),
                 SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.08,
+                  height: MediaQuery.of(context).size.height * 0.10,
                 ),
               ],
             ),
