@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_iot01_app/view/home_ui.dart';
 
 class SignupUI extends StatefulWidget {
-  const SignupUI({super.key});
+const SignupUI({super.key});
 
   @override
   State<SignupUI> createState() => _SignupUIState();
